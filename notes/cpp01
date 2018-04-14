@@ -1,0 +1,29 @@
+
+//---tokenize string---
+#include <string>
+#include <sstream>
+string str("this is a test string");
+istringstream iss(str);
+for(string token; getline(iss, token, ' ');) {
+	// do something with token
+}
+
+//---generate random number---
+#include <random>
+random_device rd;
+default_random_engine engine(rd());
+uniform_int_distribution<int> dist(0, 10);
+dist(engine);
+
+//---remove white space---
+#include <cctype>
+#include <algorithm>
+string str("this is a test string");
+str.erase(remove_if(str.begin(), 
+                    str.end(),
+                    [](char x){return isspace(x);}),
+          str.end());
+
+//---numerical limits---
+
+

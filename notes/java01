@@ -1,0 +1,59 @@
+//---copying arrays---
+System.arraycopy(copyFrom, 2, copyTo, 0, 7);
+
+//---Array utilities---
+java.util.Arrays
+char[] copyTo = java.util.Arrays.copyOfRange(copyFrom, 2, 9);
+binarySearch - get index of specific value
+equals - compare two arrays if equal or not
+fill - fills array with specific value
+sort - sorts in ascending order
+
+//---instanceOf---
+obj2 instanceOf SomeClass // returns true or false
+
+//---labeled break---
+search:
+	for (...
+		for (...
+			break search;
+
+//---continue statement---
+skip current iteration of loop
+
+//---varargs---
+public Polygon polygonFrom(Point... corners) {
+	int numberOfSides = corners.length;
+	corners[0].x = 1;
+	corners[1].x = 2;
+
+//---numerical limits---
+Integer.MAX_VALUE
+Integer.MIN_VALUE
+
+//---Integer Class---
+
+static int Integer.parseInt(String s)
+static int Integer.parseInt(String s, int radix)
+String toString()
+static String toString(int i)
+static Integer valueOf(int i)
+static Integer valueOf(String s)
+static Integer valueOf(String s, int radix)
+
+//---check if scanner is at end of file---
+Scanner myScanner = new Scanner(System.in);
+if (myScanner.hasNext()) ...
+
+//---tokenize---
+String str = "This is an example string, right? Yes!";
+String delims = "[ .,?!]+";
+String[] tokens = str.split(delims);
+
+
+
+
+
+
+
+
